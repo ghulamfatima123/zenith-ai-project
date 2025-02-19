@@ -2,6 +2,8 @@
 
 Zenith is an interactive web application that provides personalized mental health support, custom study plans, and tailored career guidance using Google's Gemini Generative AI and Streamlit. It’s designed to help you navigate daily challenges, optimize your study routine, and explore career options—all in one intuitive platform.
 
+[![Deployed on Streamlit](https://img.shields.io/badge/Deployed%20on-Streamlit-blue?style=flat-square)](https://zenith-ai-project-01.streamlit.app/)
+
 ---
 
 ## Table of Contents
