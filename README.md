@@ -1,5 +1,3 @@
-Below is a complete, ready-to-use `README.md` for your GitHub repository:
-
 # Zenith: Your AI-Powered Personal Growth & Wellness Companion
 
 Zenith is an interactive web application that provides personalized mental health support, custom study plans, and tailored career guidance using Google's Gemini Generative AI and Streamlit. It’s designed to help you navigate daily challenges, optimize your study routine, and explore career options—all in one intuitive platform.
