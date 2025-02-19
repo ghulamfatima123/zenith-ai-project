@@ -34,13 +34,6 @@ Zenith combines the power of modern AI with a clean, interactive web interface t
 
 - **Progress Tracking:**  
   Monitor your mood check-ins, study sessions, and career explorations over time.
-
-- **Robust Error Handling & Logging:**  
-  Ensures a smooth user experience and easy debugging.
-
-- **Modular & Clean Code:**  
-  Organized into separate modules for configuration, business logic, and UI, following best practices.
-
 ---
 
 ## Tech Stack
@@ -59,10 +52,7 @@ Zenith combines the power of modern AI with a clean, interactive web interface t
 zenith-ai-project/
 ├── config.py           # Handles environment variables, API configuration, and logging.
 ├── zenith_ai.py        # Contains the ZenithAI class with core business logic.
-├── main.py             # The Streamlit UI and application entry point.
-├── .env                # Environment variables (contains API keys; do not commit this).
-├── .gitignore          # Specifies files/folders to ignore (e.g., .env).
-├── README.md           # This documentation file.
+├── main.py             # The Streamlit UI and application entry point..
 └── requirements.txt    # Lists the project dependencies.
 ```
 
