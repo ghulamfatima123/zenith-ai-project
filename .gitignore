@@ -1,0 +1,9 @@
+# Ignore environment variables file
+.env
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Other files you don't want to commit
+.DS_Store
