@@ -3,6 +3,10 @@ import streamlit as st
 import random
 from datetime import datetime
 from zenith_ai import ZenithAI
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 def main():
     st.title("✨ Zenith")
@@ -68,7 +72,9 @@ def main():
                     plan = st.session_state.zenith.create_study_plan(subject, goals, time_available)
                     if plan["success"]:
                         st.markdown(plan["text"])
-                        st.session_state.zenith.study_stats[subject] = st.session_state.zenith.study_stats.get(subject, 0) + 1
+                        st.session_state.zenith.study_stats[subject] = (
+                            st.session_state.zenith.study_stats.get(subject, 0) + 1
+                        )
                     else:
                         st.warning(plan["text"])
 
@@ -117,13 +123,13 @@ def main():
             st.subheader("Mood History")
             for entry in st.session_state.zenith.mood_history[-5:]:
                 st.write(f"{entry['timestamp'].strftime('%Y-%m-%d %H:%M')} - {entry['mood']} - {entry['notes']}")
-            
+
         if st.session_state.zenith.study_stats:
             st.subheader("Study Topics")
             for subj, count in st.session_state.zenith.study_stats.items():
                 st.write(f"{subj}: {count} session{'s' if count > 1 else ''}")
 
-#footer 
+    # Footer
     st.markdown("---")
     motivational_quotes = [
         "✨ You've got this!",
