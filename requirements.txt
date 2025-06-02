@@ -3,3 +3,4 @@ streamlit
 plotly 
 pandas 
 google-generativeai
+openai
